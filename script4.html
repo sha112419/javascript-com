@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>alert1</title>
+</head>
+<body>
+    <script>
+        var salr = prompt("tell us your per day sla:");
+        var days = prompt("tell us your number of days allocate:");
+        var income = salr*days;
+        if(income>30000){
+            alert('10 percent tds');
+            income-=(income*0.100)
+
+        }
+        else{
+            alert('7 percent tds' );
+            income-=(income*0.070)
+        }
+        alert("total income is:"+income);
+
+    </script>
+    
+</body>
+</html>

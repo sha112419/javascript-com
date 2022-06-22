@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        function hello(){
+            alert("i am called")
+        }
+
+        const read=()=>{
+            var yet =document.getElementById('one')
+            let hi =yet.value-(yet.value*0.100)
+            document.getElementById('result').value=hi            
+        }
+
+        window.onload=hello
+    </script>
+</head>
+<body>
+    <input type="text" id="one" placeholder="total salary"/>
+    <button onclick="read()">find take home</button>
+    <output id="result"></output>
+    
+</body>
+</html>
